@@ -21,6 +21,14 @@ or overwrite. Write those back exactly as returned.
 
 Leave out `node_modules`, build output and binary files.
 
+In a monorepo, either send paths relative to the repository root (`apps/web/src/App.tsx`) and pass
+`app: "apps/web"`, or send paths relative to the app's folder (`src/App.tsx`) and leave `app` out.
+
+Large locale files can be left out of `check`; it then reports hardcoded text only, not missing or
+outdated translations. Always send the locale files to `localize`,
+`translate` and `add_language`: a locale file they return is written whole, so one that wasn't sent
+comes back with only the new messages.
+
 ## Tools
 
 - `check`: lists hardcoded copy, missing and outdated translations, each with its file and line.
@@ -31,8 +39,6 @@ Leave out `node_modules`, build output and binary files.
 - `translate`: fills in missing translations in existing locale files, for any stack.
 - `add_language`: adds a language (BCP 47 code such as `ja` or `pt-BR`) and translates every
   message into it.
-
-Every tool takes `app` for one app in a monorepo (its folder, relative to the repository root).
 
 ## Workflow
 
