@@ -1,0 +1,26 @@
+{
+  "name": "localize-dev",
+  "displayName": "localize.dev",
+  "version": "0.33.4",
+  "description": "Ship your app in every language. Finds hardcoded UI text, gives it translation keys, translates it with your app's context and writes the locale files, through localize.dev's hosted MCP server.",
+  "author": {
+    "name": "localize.dev",
+    "email": "hello@uselocalize.dev"
+  },
+  "homepage": "https://uselocalize.dev/mcp#hosted",
+  "repository": "https://github.com/ufortstephen/localize-dev-hosted",
+  "license": "MIT",
+  "keywords": [
+    "i18n",
+    "localization",
+    "translation",
+    "react",
+    "nextjs",
+    "vue",
+    "svelte",
+    "react-native",
+    "mcp"
+  ],
+  "logo": "assets/logo.png",
+  "privacyPolicyUrl": "https://uselocalize.dev/privacy"
+}

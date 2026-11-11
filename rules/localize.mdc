@@ -1,0 +1,10 @@
+---
+description: Translating UI text with localize.dev, in apps that have a localize.config.json
+alwaysApply: false
+---
+
+The UI text of apps with a `localize.config.json` is translated with localize.dev, so text people see goes through the i18n library and isn't hardcoded.
+
+- After adding or changing UI text, call the `localize` tool of the localize-dev MCP server. Send the files you changed, `package.json`, `localize.config.json` and the locale files in `files`, pass the changed files in `paths`, and write back every file it returns.
+- Before finishing, call `check` with the same files. It should pass.
+- Leave new messages out of the other languages' locale files: localize fills them in. Fixing a translation that's wrong is fine.

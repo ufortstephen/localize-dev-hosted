@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "localize": {
+      "type": "http",
+      "url": "https://uselocalize.dev/api/mcp"
+    }
+  }
+}
