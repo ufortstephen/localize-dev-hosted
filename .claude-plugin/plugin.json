@@ -1,7 +1,7 @@
 {
   "name": "localize-dev",
   "displayName": "localize.dev",
-  "version": "0.34.4",
+  "version": "0.34.5",
   "description": "Ship your app in every language. Finds hardcoded UI text, gives it translation keys, translates it with your app's context and writes the locale files, through localize.dev's hosted MCP server.",
   "author": {
     "name": "localize.dev",
